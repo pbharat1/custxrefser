@@ -1,0 +1,54 @@
+{
+  "type" : "object",
+  "properties" : {
+    "DIO_INPUT_MESSAGE" : {
+      "type" : "object",
+      "properties" : {
+        "DIO_MESSAGE_DETAIL" : {
+          "type" : "object",
+          "properties" : {
+            "DIO_OUTPUT_DETAIL" : {
+              "type" : "object",
+              "properties" : {
+                "CXF_RES_CUST_NUM" : {
+                  "maxLength" : 7,
+                  "type" : "string"
+                },
+                "CXF_RES_CASE_ID" : {
+                  "maxLength" : 30,
+                  "type" : "string"
+                },
+                "CXF_RES_CUST_STS_CD" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "CXF_RES_CUST_STS" : {
+                  "maxLength" : 50,
+                  "type" : "string"
+                },
+                "CXF_RESPONSE_REC" : {
+                  "type" : "array",
+                  "maxItems" : 40,
+                  "minItems" : 40,
+                  "items" : {
+                    "type" : "object",
+                    "properties" : {
+                      "CXF_RES_POL_NUM" : {
+                        "maxLength" : 7,
+                        "type" : "string"
+                      },
+                      "CXF_RES_BASE_LOC_IND" : {
+                        "maxLength" : 1,
+                        "type" : "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

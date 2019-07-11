@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="RESPONSE" direction="0" serviceType="IMS">
+    <message id="1" name="RESPONSE">
+        <segment id="1" name="Segment 1" originalName="Segment 1">
+            <field name="DIO_INPUT_MESSAGE" originalName="DIO_INPUT_MESSAGE" included="Y" path="DIO_INPUT_MESSAGE">
+                <startPos>1</startPos>
+                <bytes>32074</bytes>
+                <maxBytes>32074</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="DIO_MQFILL" originalName="DIO_MQFILL" included="N" path="DIO_INPUT_MESSAGE.DIO_MQFILL">
+                    <startPos>1</startPos>
+                    <bytes>560</bytes>
+                    <maxBytes>560</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="DIO_TRANS_DATA" originalName="DIO_TRANS_DATA" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA">
+                    <startPos>561</startPos>
+                    <bytes>110</bytes>
+                    <maxBytes>110</maxBytes>
+                    <marshaller alignment="NATURAL"/>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="DIO_LL" originalName="DIO_LL" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_LL">
+                        <startPos>561</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                        <applicationDatatype datatype="SHORT" precision="4"/>
+                    </field>
+                    <field name="DIO_ZZ" originalName="DIO_ZZ" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_ZZ">
+                        <startPos>563</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                        <applicationDatatype datatype="SHORT" precision="4"/>
+                    </field>
+                    <field name="DIO_OUTPUT_DATA" originalName="DIO_OUTPUT_DATA" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_OUTPUT_DATA">
+                        <startPos>565</startPos>
+                        <bytes>106</bytes>
+                        <maxBytes>106</maxBytes>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="DIO_TRANSCD" originalName="DIO_TRANSCD" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_OUTPUT_DATA.DIO_TRANSCD">
+                            <startPos>565</startPos>
+                            <bytes>8</bytes>
+                            <maxBytes>8</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="DIO_QUEUE_NAME" originalName="DIO_QUEUE_NAME" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_OUTPUT_DATA.DIO_QUEUE_NAME">
+                            <startPos>573</startPos>
+                            <bytes>48</bytes>
+                            <maxBytes>48</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="DIO_REPLYTO_QUEUE" originalName="DIO_REPLYTO_QUEUE" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_OUTPUT_DATA.DIO_REPLYTO_QUEUE">
+                            <startPos>621</startPos>
+                            <bytes>48</bytes>
+                            <maxBytes>48</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="DIO_MSG_SOURCE" originalName="DIO_MSG_SOURCE" included="N" path="DIO_INPUT_MESSAGE.DIO_TRANS_DATA.DIO_OUTPUT_DATA.DIO_MSG_SOURCE">
+                            <startPos>669</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                    </field>
+                </field>
+                <field name="DIO_MESSAGE_DETAIL" originalName="DIO_MESSAGE_DETAIL" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL">
+                    <startPos>671</startPos>
+                    <bytes>31404</bytes>
+                    <maxBytes>31404</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="FILL_0" originalName="FILL_0" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.FILL_0">
+                        <startPos>671</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_PCI_SCREEN_APPL" originalName="DIO_PCI_SCREEN_APPL" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_PCI_SCREEN_APPL">
+                        <startPos>675</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_PCI_SCREEN_TASK" originalName="DIO_PCI_SCREEN_TASK" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_PCI_SCREEN_TASK">
+                        <startPos>679</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_MESSAGE_SOURCE" originalName="DIO_MESSAGE_SOURCE" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_MESSAGE_SOURCE">
+                        <startPos>683</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_MESSAGE_SOURCE_ID" originalName="DIO_MESSAGE_SOURCE_ID" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_MESSAGE_SOURCE_ID">
+                        <startPos>691</startPos>
+                        <bytes>6</bytes>
+                        <maxBytes>6</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_AUDIT_SEQ_NUMBER" originalName="DIO_AUDIT_SEQ_NUMBER" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_AUDIT_SEQ_NUMBER">
+                        <startPos>697</startPos>
+                        <bytes>26</bytes>
+                        <maxBytes>26</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_MESSAGE_ID" originalName="DIO_MESSAGE_ID" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_MESSAGE_ID">
+                        <startPos>723</startPos>
+                        <bytes>24</bytes>
+                        <maxBytes>24</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_CORRELATION_ID" originalName="DIO_CORRELATION_ID" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_CORRELATION_ID">
+                        <startPos>747</startPos>
+                        <bytes>24</bytes>
+                        <maxBytes>24</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="FILL_1" originalName="FILL_1" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.FILL_1">
+                        <startPos>771</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_BUSINESS_EVENT" originalName="DIO_BUSINESS_EVENT" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_BUSINESS_EVENT">
+                        <startPos>772</startPos>
+                        <bytes>30</bytes>
+                        <maxBytes>30</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="DIO_OUTPUT_DETAIL" originalName="DIO_OUTPUT_DETAIL" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL">
+                        <startPos>802</startPos>
+                        <bytes>31273</bytes>
+                        <maxBytes>31273</maxBytes>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="CXF_RES_CUST_NUM" originalName="CXF_RES_CUST_NUM" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RES_CUST_NUM">
+                            <startPos>802</startPos>
+                            <bytes>7</bytes>
+                            <maxBytes>7</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CXF_RES_CASE_ID" originalName="CXF_RES_CASE_ID" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RES_CASE_ID">
+                            <startPos>809</startPos>
+                            <bytes>30</bytes>
+                            <maxBytes>30</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CXF_RES_CUST_STS_CD" originalName="CXF_RES_CUST_STS_CD" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RES_CUST_STS_CD">
+                            <startPos>839</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CXF_RES_CUST_STS" originalName="CXF_RES_CUST_STS" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RES_CUST_STS">
+                            <startPos>840</startPos>
+                            <bytes>50</bytes>
+                            <maxBytes>50</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CXF_RESPONSE_REC" originalName="CXF_RESPONSE_REC" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RESPONSE_REC" minOccurs="40" maxOccurs="40">
+                            <startPos>890</startPos>
+                            <bytes>320</bytes>
+                            <maxBytes>320</maxBytes>
+                            <applicationDatatype datatype="ARRAY"/>
+                            <field name="CXF_RES_POL_NUM" originalName="CXF_RES_POL_NUM" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RESPONSE_REC.CXF_RES_POL_NUM">
+<bytes>7</bytes>
+<maxBytes>7</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="CXF_RES_BASE_LOC_IND" originalName="CXF_RES_BASE_LOC_IND" included="Y" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.CXF_RESPONSE_REC.CXF_RES_BASE_LOC_IND">
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                        </field>
+                        <field name="FILL_2" originalName="FILL_2" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.FILL_2">
+                            <startPos>1210</startPos>
+                            <bytes>30795</bytes>
+                            <maxBytes>30795</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="DIO_OUTPUT_DETAIL_2" originalName="DIO_OUTPUT_DETAIL_2" included="N" path="DIO_INPUT_MESSAGE.DIO_MESSAGE_DETAIL.DIO_OUTPUT_DETAIL.DIO_OUTPUT_DETAIL_2">
+                            <startPos>32005</startPos>
+                            <bytes>70</bytes>
+                            <maxBytes>70</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                    </field>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>

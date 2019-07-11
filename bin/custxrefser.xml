@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns:ns2="http://www.ibm.com/ims/Transaction">
+    <shallow>true</shallow>
+    <serviceName>custxrefser</serviceName>
+    <serviceType>ims-rest</serviceType>
+    <resourceType>TRAN</resourceType>
+    <status>1</status>
+    <conversionType>3</conversionType>
+    <dataProtocol>0</dataProtocol>
+    <serviceInputInterface>
+        <metadataName>request.si</metadataName>
+        <serviceInterface>
+            <interface>
+                <segment segmentName="Segment 1">
+                    <interfaceField included="Y" fieldName="DIO_INPUT_MESSAGE">
+                        <field included="N" fieldName="DIO_MQFILL"/>
+                        <field included="N" fieldName="DIO_TRANS_DATA">
+                            <field included="N" fieldName="DIO_LL"/>
+                            <field included="N" fieldName="DIO_ZZ"/>
+                            <field included="N" fieldName="DIO_INPUT_DATA">
+<field included="N" fieldName="DIO_TRANSCD"/>
+<field included="N" fieldName="DIO_QUEUE_NAME"/>
+<field included="N" fieldName="DIO_REPLYTO_QUEUE"/>
+<field included="N" fieldName="DIO_MSG_SOURCE"/>
+                            </field>
+                        </field>
+                        <field included="Y" fieldName="DIO_MESSAGE_DETAIL">
+                            <field included="N" fieldName="FILL_0"/>
+                            <field included="N" fieldName="DIO_PCI_SCREEN_APPL"/>
+                            <field included="Y" fieldName="DIO_PCI_SCREEN_TASK" defaultValue="DA7N" isHex="false"/>
+                            <field included="N" fieldName="DIO_MESSAGE_SOURCE"/>
+                            <field included="N" fieldName="DIO_MESSAGE_SOURCE_ID"/>
+                            <field included="N" fieldName="DIO_AUDIT_SEQ_NUMBER"/>
+                            <field included="N" fieldName="DIO_MESSAGE_ID"/>
+                            <field included="N" fieldName="DIO_CORRELATION_ID"/>
+                            <field included="N" fieldName="FILL_1"/>
+                            <field included="N" fieldName="DIO_BUSINESS_EVENT"/>
+                            <field included="Y" fieldName="DIO_INPUT_DETAIL">
+<field included="Y" fieldName="CUSTOMER NUMBER" isHex="false"/>
+<field included="N" fieldName="FILL_2"/>
+<field included="N" fieldName="DIO_INPUT_DETAIL_2"/>
+                            </field>
+                        </field>
+                    </interfaceField>
+                </segment>
+            </interface>
+        </serviceInterface>
+        <version>0</version>
+    </serviceInputInterface>
+    <serviceOutputInterface>
+        <metadataName>RESPONSE.si</metadataName>
+        <serviceInterface>
+            <interface>
+                <segment segmentName="Segment 1">
+                    <interfaceField included="Y" fieldName="DIO_INPUT_MESSAGE">
+                        <field included="N" fieldName="DIO_MQFILL"/>
+                        <field included="N" fieldName="DIO_TRANS_DATA">
+                            <field included="N" fieldName="DIO_LL"/>
+                            <field included="N" fieldName="DIO_ZZ"/>
+                            <field included="N" fieldName="DIO_OUTPUT_DATA">
+<field included="N" fieldName="DIO_TRANSCD"/>
+<field included="N" fieldName="DIO_QUEUE_NAME"/>
+<field included="N" fieldName="DIO_REPLYTO_QUEUE"/>
+<field included="N" fieldName="DIO_MSG_SOURCE"/>
+                            </field>
+                        </field>
+                        <field included="Y" fieldName="DIO_MESSAGE_DETAIL">
+                            <field included="N" fieldName="FILL_0"/>
+                            <field included="N" fieldName="DIO_PCI_SCREEN_APPL"/>
+                            <field included="N" fieldName="DIO_PCI_SCREEN_TASK"/>
+                            <field included="N" fieldName="DIO_MESSAGE_SOURCE"/>
+                            <field included="N" fieldName="DIO_MESSAGE_SOURCE_ID"/>
+                            <field included="N" fieldName="DIO_AUDIT_SEQ_NUMBER"/>
+                            <field included="N" fieldName="DIO_MESSAGE_ID"/>
+                            <field included="N" fieldName="DIO_CORRELATION_ID"/>
+                            <field included="N" fieldName="FILL_1"/>
+                            <field included="N" fieldName="DIO_BUSINESS_EVENT"/>
+                            <field included="Y" fieldName="DIO_OUTPUT_DETAIL">
+<field included="Y" fieldName="CXF_RES_CUST_NUM"/>
+<field included="Y" fieldName="CXF_RES_CASE_ID"/>
+<field included="Y" fieldName="CXF_RES_CUST_STS_CD"/>
+<field included="Y" fieldName="CXF_RES_CUST_STS"/>
+<field included="Y" fieldName="CXF_RESPONSE_REC">
+    <field included="Y" fieldName="CXF_RES_POL_NUM"/>
+    <field included="Y" fieldName="CXF_RES_BASE_LOC_IND"/>
+</field>
+<field included="N" fieldName="FILL_2"/>
+<field included="N" fieldName="DIO_OUTPUT_DETAIL_2"/>
+                            </field>
+                        </field>
+                    </interfaceField>
+                </segment>
+            </interface>
+        </serviceInterface>
+        <version>0</version>
+    </serviceOutputInterface>
+    <totalExecCount>0</totalExecCount>
+    <failedCount>0</failedCount>
+    <trancodeOverride>G4SGDA19</trancodeOverride>
+    <trimOutputLeadingWhitespace>false</trimOutputLeadingWhitespace>
+    <trimOutputTrailingWhitespace>true</trimOutputTrailingWhitespace>
+    <escapeOutputControlCharacters>false</escapeOutputControlCharacters>
+    <initializeInputFields>false</initializeInputFields>
+    <omitOutputFieldsByValue>false</omitOutputFieldsByValue>
+    <omitOutputFieldsByValueByte>0x00</omitOutputFieldsByValueByte>
+    <omitOutputEmptyTags>false</omitOutputEmptyTags>
+    <enforceMinArrayOccurrence>false</enforceMinArrayOccurrence>
+    <enforceMinArrayOccurrenceResponse>false</enforceMinArrayOccurrenceResponse>
+</service>

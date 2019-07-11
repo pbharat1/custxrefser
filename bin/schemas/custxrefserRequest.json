@@ -1,0 +1,29 @@
+{
+  "type" : "object",
+  "properties" : {
+    "DIO_INPUT_MESSAGE" : {
+      "type" : "object",
+      "properties" : {
+        "DIO_MESSAGE_DETAIL" : {
+          "type" : "object",
+          "properties" : {
+            "DIO_PCI_SCREEN_TASK" : {
+              "maxLength" : 4,
+              "type" : "string",
+              "default" : "DA7N"
+            },
+            "DIO_INPUT_DETAIL" : {
+              "type" : "object",
+              "properties" : {
+                "CUSTOMER NUMBER" : {
+                  "maxLength" : 7,
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
